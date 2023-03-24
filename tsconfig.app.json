@@ -1,0 +1,28 @@
+{
+  "extends": "@vue/tsconfig/tsconfig.web.json",
+  "compilerOptions": {
+    "removeComments": false,
+    "lib": [
+      "DOM",
+      "ES2022",
+    ],
+    "composite": true,
+    "baseUrl": ".",
+    "paths": {
+      "~/*": [
+        "./src/*"
+      ]
+    },
+    "types": []
+  },
+  "vueCompilerOptions": {
+    "jsxTemplates": true,
+    "experimentalRfc436": true
+  },
+  "include": [
+    "src/**/*",
+  ],
+  "exclude": [
+    "src/**/__tests__/*"
+  ],
+}
